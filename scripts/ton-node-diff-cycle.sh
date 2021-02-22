@@ -1,8 +1,11 @@
 #!/bin/bash -eE
 
-cycle_interval=60
+cycle_interval=2
+cd /opt/freeton/scripts
+
 while true; do
-   echo /opt/freeton/scripts/ton-node-diff.sh
+   NOW=$(date +"%m-%d-%Y %H:%M:%S")
+   echo "$NOW - $(./ton-node-diff.sh)"
    sleep $cycle_interval
 done
 
