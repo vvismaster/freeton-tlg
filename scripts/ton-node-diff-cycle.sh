@@ -1,6 +1,6 @@
 #!/bin/bash -eE
 
-cycle_interval=2
+cycle_interval=30
 cd /opt/freeton/scripts
 
 while true; do
